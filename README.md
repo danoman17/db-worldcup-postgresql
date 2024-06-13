@@ -1,1 +1,0 @@
-# db-worldcup-postgresql
