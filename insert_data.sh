@@ -9,8 +9,10 @@ fi
 
 # Do not change code above this line. Use the PSQL variable above to query your database.
 
+# We truncate the tables so we can make as many test or re-insertion as we require
 echo $($PSQL "TRUNCATE games, teams")
 
+# we break down the fields of the csv file, so we can manipulate each item when doing insertions
 cat games.csv | while IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOALS OPPONENT_GOALS
 do
   if [[ $WINNER != winner ]]
@@ -56,6 +58,7 @@ do
   fi
 done
 
+# we break down the fields of the csv file, so we can manipulate each item when doing insertions
 cat games.csv | while IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOALS OPPONENT_GOALS
 do
   if [[ $YEAR != year ]]
