@@ -76,7 +76,7 @@ This script runs a series of SQL queries to demonstrate various capabilities of 
 - Champions over the years.
 - Teams starting with specific letters.
 
-## Contact
+## Conclusion
 
 This project demonstrates the ability to design, implement, and manage a complex relational database in PostgreSQL. It showcases data modeling skills, knowledge of SQL, and understanding of database constraints and normalization.
 
